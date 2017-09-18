@@ -1,0 +1,403 @@
+/*头部样式*/
+.header{
+    height: 60px;
+    background: #fafafa;
+    z-index: 3;
+    transition: all 1s;
+}
+.header-logo{
+    display: block;
+    float: left;
+    margin: 10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #07111b;
+    padding-left: 50px;
+    background: url("../img/logo.png") left center no-repeat;
+}
+.header-logo:hover{
+    color: #f01414;
+}
+.header-nav{
+    height: 40px;
+    margin-top: 10px;
+}
+.header-nav .nav-item{
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #292f35;
+    text-align: center;
+    margin-left: 40px;
+    position: relative;
+}
+.header-nav .nav-item:hover{
+    color: #f01400;
+}
+.header-nav .item-on{
+    color: #f01400;
+}
+.header-nav .item-on::after{
+    display: block;
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f01400;
+    left: 0;
+    bottom: 0;
+}
+.header-nav .nav-buy{
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    width: 90px;
+    color: #f4f4f5;
+    text-align: center;
+    background: #000;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin-left: 40px;
+}
+
+/*导航条back样式*/
+.header-back{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+.header-back .header-logo,
+.header-back .header-nav .nav-item{
+    color: #fff;
+}
+
+
+/*第一屏样式*/
+.screen-1{
+    height: 800px;
+    background: url("../img/bg-screen-1.png") no-repeat ;
+    background-size: cover;
+    position: relative;
+}
+.screen-1 h2{
+    padding-top: 152px;
+    font-size: 42px;
+    font-family: "Microsoft Yahei";
+    color: #fff;
+    text-align: center;
+}
+.screen-1 h2 span{
+    color: #f01414;
+}
+.screen-1 .screen-1-phone{
+    width: 1375px;
+    height: 305px;
+    background: url("../img/screen-1-phone.png") no-repeat center;
+    position: absolute;
+    left: 50%;
+    margin-left: -687px;
+    bottom: 180px;
+    z-index: 5;
+}
+.screen-1 .screen-1-shadow{
+    width: 1233px;
+    height: 411px;
+    background: url("../img/screen-1-shadow.png") no-repeat center;
+    position: absolute;
+    left: 50%;
+    margin-left: -616px;
+    bottom: 30px;
+    z-index: 4;
+    /*opacity: .8;*/
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+
+/*第二屏样式*/
+.screen-2{
+    position: relative;
+    height: 800px;
+    background: #fafafa;
+    overflow: hidden;
+}
+.screen-2 h2{
+    font-size: 42px;
+    font-family: "Microsoft Yahei";
+    color: #f01414;
+    text-align: center;
+    padding-top: 96px;
+}
+.screen-2 p{
+    padding-top: 25px;
+    line-height: 28px;
+    font-size: 16px;
+    font-family: "Microsoft Yahei";
+    text-align: center;
+}
+.screen-2 .screen-2-phone{
+    position: absolute;
+    width: 928px;
+    height: 873px;
+    background: url("../img/bg-screen-2.png") no-repeat center;
+    left: 50%;
+    margin-left: -464px;
+    top: 270px;
+    z-index: 2;
+}
+.screen-2-phone .screen-2-point{
+    position: absolute;
+    width: 108px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 22px;
+    color: #4d555d;
+    font-family: "Microsoft Yahei";
+}
+.screen-2-phone .point-1{
+    padding-right: 122px;
+    top: 180px;
+    left: -120px;
+    background: url("../img/icon-point-right.png") no-repeat center right;
+}
+.screen-2-phone .point-2{
+    padding-left: 122px;
+    top: 37px;
+    left: 584px;
+    background: url("../img/icon-point-left.png") no-repeat left center;
+}
+.screen-2-phone .point-3{
+    padding-left: 122px;
+    top: 340px;
+    left: 680px;
+    background: url("../img/icon-point-left.png") no-repeat left center;
+}
+
+/*第三屏样式*/
+.screen-3{
+    position: relative;
+    height: 800px;
+    background: #a71316;
+    overflow: hidden;
+}
+.screen-3 .wrap{
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+}
+.screen-3 h2{
+    font-size: 46px;
+    color: #fff;
+    text-align: left;
+    padding-top: 96px;
+}
+.screen-3 p{
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    line-height: 26px;
+    font-family: "Microsoft Yahei";
+}
+.screen-3 .screen-3-phone{
+    width: 729px;
+    height: 900px;
+    background: url("../img/bg-screen-3.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: 2;
+}
+.screen-3 .screen-3-feature{
+    position: relative;
+    top: 140px;
+    left: 5px;
+    width: 320px;
+    height: 280px;
+
+}
+.screen-3-feature .feature-item{
+    float: left;
+    margin-bottom: 20px;
+    width: 140px;
+    height: 120px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #D97173;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.feature-item .feature-num{
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    height: 36px;
+    line-height: 36px;
+    padding: 28px 0 8px;
+}
+
+/*第四屏样式*/
+.screen-4{
+    height: 800px;
+    background: #fff;
+    overflow: hidden;
+}
+.screen-4 .wrap{
+    max-width: 1200px;
+    min-width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.screen-4 h2{
+    font-size: 42px;
+    color: #f01414;
+    padding-top: 80px;
+    text-align: center;
+}
+.screen-4 p{
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin-top: 42px;
+}
+.screen-4 .screen-4-list {
+    width: 1300px;
+    height: 270px;
+    margin-top: 100px;
+}
+.screen-4-list .list-item{
+    width: 220px;
+    height: 270px;
+    margin-right: 90px;
+    float: left;
+}
+.list-item .item-phone{
+    width: 220px;
+    height: 270px;
+}
+.list-item .phone-name{
+    margin: 36px 0 8px;
+    text-align: center;
+    font-size: 16px;
+    color: #2c3238;
+    height: 16px;
+    line-height: 16px;
+}
+.list-item .phone-storage{
+    font-size: 9px;
+    height: 9px;
+    line-height: 9px;
+    text-align: center;
+    color: #93999f;
+}
+
+/*第五屏样式*/
+.screen-5{
+    position: relative;
+    height: 800px;
+    background: #d9dde1;
+    overflow: hidden;
+}
+.screen-5 .wrap{
+    width: 800px;
+    margin: 0 auto;
+}
+.screen-5 h2{
+    font-size: 42px;
+    color: #f01414;
+    padding-top: 180px;
+    text-align: center;
+}
+.screen-5 p{
+    font-size: 16px;
+    color: #000;
+    margin-top: 30px;
+    text-align: center;
+}
+.screen-5 .screen5-bg{
+    width: 100%;
+    height: 370px;
+    background: url("../img/bg-screen-5.png") no-repeat bottom center;
+    background-size: cover;
+    position:  absolute;
+    bottom: -100px;
+}
+
+/*第六屏样式*/
+.screen-buy{
+    height: 80px;
+    padding: 120px 0;
+    background: #2b333b;
+    background: url("../img/bg-screen-buy.png") no-repeat center;
+    background-size: cover;
+}
+.screen-buy .buy-btn{
+    display: block;
+    margin:0 auto;
+    width: 240px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    background: #f01414;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.screen-buy .buy-btn:hover{
+    box-shadow: 0 10px  10px rgba(0, 0, 0, .5);
+    -webkit-transform: translate(0, -5px);
+    -moz-transform: translate(0, -5px);
+    -ms-transform: translate(0, -5px);
+    -o-transform: translate(0, -5px);
+    transform: translate(0, -5px);
+}
+
+/*footer样式*/
+.footer{
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: #07111b;
+}
+
+/*siderbar样式*/
+.sidebar{
+    position: fixed;
+    right: 0;
+    bottom: 120px;
+    z-index: 5;
+    padding: 5px 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(7, 17, 27, 0.3);
+}
+.sidebar .sidebar-item{
+    display: block;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    background: #ffffff;
+    color: #93999f;
+    padding: 5px 0;
+    margin: 5px 0 0;
+    border-top: 1px solid #eee;
+}
+.sidebar-item:first-child{
+    border: none;
+}

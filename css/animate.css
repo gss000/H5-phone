@@ -1,0 +1,168 @@
+.screen1-head, .screen-1-phone, .screen-1-shadow{
+    transition: all 1s;
+}
+.screen1-head-in, .screen-1-phone-in{
+    -webkit-transform: translate(0, -100%);
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    -o-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    opacity: 0;
+}
+.screen-1-shadow-in{
+    -webkit-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -o-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    opacity: 0;
+}
+.screen1-head-done, .screen-1-phone-done, .screen-1-shadow-done{
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+/*第二屏*/
+.screen-2-heading, .screen-2-subheading, .screen-2-phone, .screen-2-point{
+    transition: all 1s;
+}
+.screen-2-heading-in, .screen-2-subheading-in{
+    -webkit-transform: translate(0, -100%);
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    -o-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    opacity: 0;
+}
+.screen-2-phone-in{
+    -webkit-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -o-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    opacity: 0;
+}
+.screen-2-heading-done, .screen-2-subheading-done, .screen-2-phone-done{
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+}
+.screen-2-point:before, .screen-2-point:after{
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    border-radius: 50%;
+    background: rgba(255, 0, 0, 0.4);
+    animation: bounce 2s infinite;
+}
+.screen-2-point:before{
+    animation: bounce 2s infinite 1s;
+}
+.point-1:before, .point-1:after{
+    left: 210px;
+}
+
+
+/*第三屏*/
+.screen-3-heading, .screen-3-subheading, .screen-3-phone, .screen-3-feature{
+    transition: all 1s;
+}
+.screen-3-heading-in, .screen-3-subheading-in{
+    transform: translate(0, -100%);
+    opacity: 0;
+}
+.screen-3-phone-in{
+    transform: translate(0, 100%);
+    opacity: 0;
+}
+.screen-3-heading-done, .screen-3-subheading-done{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+.screen-3-phone-done{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+.screen-3-feature-in{
+    transform: scale(0.5);
+    opacity: 0;
+}
+.screen-3-feature-done{
+    transform: scale(1);
+    opacity: 1;
+}
+.feature-item1, .feature-item2, .feature-item3, .feature-item4{
+    cursor: pointer;
+    transition: all 0.8s;
+}
+.feature-item1:hover, .feature-item2:hover, .feature-item3:hover, .feature-item4:hover{
+    transform: scale(1.05);
+    border-color: #ffffff;
+}
+
+/*第四屏*/
+.screen-4-heading, .screen-4-subheading{
+    transition: all 1s;
+}
+.screen-4-heading-in, .screen-4-subheading-in{
+    transform: translate(0, -100%);
+    opacity: 0;
+}
+.screen-4-heading-done, .screen-4-subheading-done{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+.list-item1-in, .list-item2-in, .list-item3-in, .list-item4-in{
+    transform: translate(0, 100%);
+    opacity: 0;
+}
+.list-item1-done, .list-item2-done, .list-item3-done, .list-item4-done{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+.list-item1{transition: all 1s;}
+.list-item2{transition: all 1.4s;}
+.list-item3{transition: all 1.6s;}
+.list-item4{transition: all 1.8s;}
+
+/*第五屏*/
+.screen-5-heading, .screen-5-subheading, .screen5-bg{
+    transition: all 1s;
+}
+.screen-5-heading-in, .screen-5-subheading-in{
+    transform: translate(0, -100%);
+    opacity: 0;
+}
+.screen-5-heading-done, .screen-5-subheading-done{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+.screen5-bg-in{
+    transform: scale(0.5);
+    opacity: 0;}
+.screen5-bg-done{
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+/*帧动画设置*/
+@keyframes bounce {
+    0%, 100%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+}
