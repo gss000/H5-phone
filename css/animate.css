@@ -2,11 +2,11 @@
     transition: all 1s;
 }
 .screen1-head-in, .screen-1-phone-in{
-    -webkit-transform: translate(0, -100%);
-    -moz-transform: translate(0, -100%);
-    -ms-transform: translate(0, -100%);
-    -o-transform: translate(0, -100%);
-    transform: translate(0, -100%);
+    -webkit-transform: translate(0, -70%);
+    -moz-transform: translate(0, -70%);
+    -ms-transform: translate(0, -70%);
+    -o-transform: translate(0, -70%);
+    transform: translate(0, -70%);
     opacity: 0;
 }
 .screen-1-shadow-in{
@@ -123,11 +123,11 @@
     transform: translate(0, 0);
     opacity: 1;
 }
-.list-item1-in, .list-item2-in, .list-item3-in, .list-item4-in{
+.list-item1-in{
     transform: translate(0, 100%);
     opacity: 0;
 }
-.list-item1-done, .list-item2-done, .list-item3-done, .list-item4-done{
+.list-item1-done{
     transform: translate(0, 0);
     opacity: 1;
 }

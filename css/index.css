@@ -73,7 +73,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 5;
+    z-index: 10;
 }
 .header-back .header-logo,
 .header-back .header-nav .nav-item{
@@ -314,7 +314,7 @@
 .screen-5 h2{
     font-size: 42px;
     color: #f01414;
-    padding-top: 180px;
+    padding-top: 160px;
     text-align: center;
 }
 .screen-5 p{
